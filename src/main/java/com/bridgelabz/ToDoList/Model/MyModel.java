@@ -7,6 +7,9 @@ import jakarta.persistence.Id;
 
 @Entity
 public class MyModel {
+    public MyModel() {
+    }
+
     public MyModel(MyDto myDto){
         this.name=myDto.name;
         this.description= myDto.description;
